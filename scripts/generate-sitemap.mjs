@@ -35,5 +35,13 @@ const xml = `<?xml version="1.0" encoding="UTF-8"?>
 </urlset>
 `
 
+const robots = `# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+Sitemap: ${SITE}/sitemap.xml
+`
+
 writeFileSync(join(distDir, 'sitemap.xml'), xml, 'utf8')
-console.log('sitemap.xml → dist/ (lastmod:', lastmod + ')')
+writeFileSync(join(distDir, 'robots.txt'), robots.trimEnd() + '\n', 'utf8')
+console.log('sitemap.xml, robots.txt → dist/ (lastmod:', lastmod + ')')
