@@ -2,12 +2,19 @@ import { images } from '../data/images.ts'
 
 export function PrinterSection() {
   return (
-    <section id="obladnannya" className="scroll-mt-20 px-4 py-16 sm:px-6">
+    <section
+      id="obladnannya"
+      className="scroll-mt-20 px-4 py-16 sm:px-6"
+      aria-labelledby="obladnannya-heading"
+    >
       <div className="mx-auto max-w-6xl">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500/90">
           Парк обладнання
         </p>
-        <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <h2
+          id="obladnannya-heading"
+          className="mt-2 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl"
+        >
           Обладнання
         </h2>
         <p className="mt-3 max-w-2xl text-stone-400">

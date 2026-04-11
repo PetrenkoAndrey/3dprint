@@ -2,7 +2,10 @@ import { images } from '../data/images.ts'
 
 export function Hero() {
   return (
-    <section className="relative overflow-hidden px-4 pb-16 pt-10 sm:px-6 sm:pb-24 sm:pt-14">
+    <section
+      className="relative overflow-hidden px-4 pb-16 pt-10 sm:px-6 sm:pb-24 sm:pt-14"
+      aria-labelledby="hero-heading"
+    >
       <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(ellipse_80%_60%_at_50%_-20%,rgba(251,191,36,0.18),transparent)]" />
       <div className="relative mx-auto max-w-6xl lg:grid lg:grid-cols-12 lg:items-center lg:gap-10">
         <div className="lg:col-span-7">
@@ -10,7 +13,10 @@ export function Hero() {
             <span className="h-1.5 w-1.5 rounded-full bg-amber-400 shadow-[0_0_10px_#fbbf24]" />
             FDM · Нікополь
           </p>
-          <h1 className="mt-5 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl">
+          <h1
+            id="hero-heading"
+            className="mt-5 font-display text-4xl font-extrabold leading-[1.05] tracking-tight text-white sm:text-5xl lg:text-6xl"
+          >
             3D-друк, який{' '}
             <span className="bg-gradient-to-r from-amber-300 via-amber-400 to-orange-400 bg-clip-text text-transparent">
               тримає форму

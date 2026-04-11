@@ -18,12 +18,19 @@ const libraries = [
 
 export function ModelLibraries() {
   return (
-    <section id="modeli" className="scroll-mt-20 border-y border-stone-800/80 bg-stone-900/20 px-4 py-16 sm:px-6">
+    <section
+      id="modeli"
+      className="scroll-mt-20 border-y border-stone-800/80 bg-stone-900/20 px-4 py-16 sm:px-6"
+      aria-labelledby="modeli-heading"
+    >
       <div className="mx-auto max-w-6xl">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500/90">
           STL та 3MF
         </p>
-        <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <h2
+          id="modeli-heading"
+          className="mt-2 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl"
+        >
           Де шукати моделі
         </h2>
         <p className="mt-3 max-w-3xl text-stone-400">

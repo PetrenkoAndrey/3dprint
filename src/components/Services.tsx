@@ -15,12 +15,19 @@ const items = [
 
 export function Services() {
   return (
-    <section id="poslugy" className="scroll-mt-20 px-4 py-16 sm:px-6">
+    <section
+      id="poslugy"
+      className="scroll-mt-20 px-4 py-16 sm:px-6"
+      aria-labelledby="poslugy-heading"
+    >
       <div className="mx-auto max-w-6xl">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500/90">
           Послуги
         </p>
-        <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+        <h2
+          id="poslugy-heading"
+          className="mt-2 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl"
+        >
           Що робимо
         </h2>
         <p className="mt-3 max-w-2xl text-stone-400">

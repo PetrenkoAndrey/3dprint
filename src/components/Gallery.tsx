@@ -2,13 +2,20 @@ import { galleryItems } from '../data/galleryItems.ts'
 
 export function Gallery() {
   return (
-    <section id="pryklady" className="scroll-mt-20 px-4 py-16 sm:px-6">
+    <section
+      id="pryklady"
+      className="scroll-mt-20 px-4 py-16 sm:px-6"
+      aria-labelledby="pryklady-heading"
+    >
       <div className="mx-auto max-w-6xl">
         <div className="max-w-2xl">
           <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500/90">
             Портфоліо
           </p>
-          <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">
+          <h2
+            id="pryklady-heading"
+            className="mt-2 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl"
+          >
             Приклади друку
           </h2>
         </div>

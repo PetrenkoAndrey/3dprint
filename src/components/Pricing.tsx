@@ -13,16 +13,28 @@ const rows = [
 
 export function Pricing() {
   return (
-    <section id="ciny" className="scroll-mt-20 border-y border-stone-800/80 bg-stone-900/30 px-4 py-16 sm:px-6">
+    <section
+      id="ciny"
+      className="scroll-mt-20 border-y border-stone-800/80 bg-stone-900/30 px-4 py-16 sm:px-6"
+      aria-labelledby="ciny-heading"
+    >
       <div className="mx-auto max-w-6xl">
         <p className="text-xs font-semibold uppercase tracking-[0.2em] text-amber-500/90">Прайс</p>
-        <h2 className="mt-2 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl">Ціни</h2>
+        <h2
+          id="ciny-heading"
+          className="mt-2 font-display text-3xl font-bold tracking-tight text-white sm:text-4xl"
+        >
+          Ціни
+        </h2>
         <p className="mt-3 max-w-2xl text-stone-400">
           Вартість залежить від ваги моделі, висоти шару, заповнення та часу друку. Орієнтовні
           середні ставки по Україні; точну суму порахую після файлу.
         </p>
         <div className="mt-8 overflow-hidden rounded-2xl border border-stone-800 bg-stone-950/40">
           <table className="w-full text-left text-sm">
+            <caption className="sr-only">
+              Орієнтовна вартість FDM-друку за грам матеріалу: PLA та PETG
+            </caption>
             <thead className="bg-stone-900/80 text-xs uppercase tracking-wide text-stone-500">
               <tr>
                 <th className="px-4 py-3 font-semibold sm:px-6">Матеріал</th>
