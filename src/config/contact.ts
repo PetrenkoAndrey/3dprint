@@ -12,6 +12,9 @@ export const business = {
   email: 'dd270386pai@gmail.com',
 } as const
 
+/** Telegram @andrey_petrenko27 */
+export const TELEGRAM_ANDREY_HREF = 'https://t.me/andrey_petrenko27' as const
+
 export const contactLinks: ContactItem[] = [
   {
     label: 'Адреса',
@@ -26,7 +29,7 @@ export const contactLinks: ContactItem[] = [
   {
     label: 'Telegram',
     value: '@andrey_petrenko27',
-    href: 'https://t.me/andrey_petrenko27',
+    href: TELEGRAM_ANDREY_HREF,
     external: true,
   },
   {
