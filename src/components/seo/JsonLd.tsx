@@ -19,7 +19,7 @@ function buildGraph() {
     },
     areaServed: {
       '@type': 'Country',
-      name: 'Україна',
+      name: SITE.areaServedName,
     },
     priceRange: '₴₴',
     sameAs: [
@@ -32,7 +32,7 @@ function buildGraph() {
     '@type': 'WebSite',
     name: SITE.name,
     url: SITE.canonicalUrl,
-    inLanguage: SITE.lang,
+    inLanguage: [...SITE.inLanguages],
     publisher: { '@id': `${SITE.canonicalUrl}#business` },
   }
 
